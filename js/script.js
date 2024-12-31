@@ -32,11 +32,9 @@ const facebookAdPopupCloseFunc = () => {
 	facebookAdPopup.classList.add('hide')
 }
 facebookAdPopupCloseArrow.addEventListener('click', facebookAdPopupCloseFunc)
-
 //============= SECTION FASCEBOOK POPUP CLOSE ====================
 
 //============= SECTION KNOW MORE HINTS OPEN & CLOSE ====================
-
 knowMoreHints.forEach(element => {
 	const knowMoreOpenHint = () => {
 		element.children[1].classList.toggle('show')
@@ -45,8 +43,8 @@ knowMoreHints.forEach(element => {
 	element.addEventListener('click', knowMoreOpenHint)
 })
 //============= SECTION KNOW MORE HINTS OPEN & CLOSE ====================
-//============= SECTION FAQ HINTS OPEN & CLOSE ====================
 
+//============= SECTION FAQ HINTS OPEN & CLOSE ====================
 faqHints.forEach(element => {
 	const faqOpenHint = () => {
 		element.children[1].classList.toggle('show')
@@ -55,8 +53,3 @@ faqHints.forEach(element => {
 	element.addEventListener('click', faqOpenHint)
 })
 //============= SECTION FAQ HINTS OPEN & CLOSE ====================
-
-// const arrowButtons = document.querySelectorAll('.know-more__text__table__element__arrow')
-
-// arrowButtons.forEach(element => element.addEventListener(element.classList.toggle('rotateArrow ')))
-//====================== FUNCTIONS ===============================
