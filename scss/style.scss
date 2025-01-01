@@ -935,6 +935,9 @@ main {
 // ================== HOME PAGE ==========================
 // ================== FAQ PAGE ==========================
 main {
+	.faq-page {
+		background-image: none;
+	}
 	.faq {
 		&__table {
 			&--faq-page {
@@ -1206,6 +1209,13 @@ main .faq__table--faq-page .faq__table__element {
 		padding: 2rem 2rem 2rem 2rem;
 		flex-direction: row;
 		justify-content: space-between;
+	}
+
+	// ========================FAQ PAGE=========================
+	main .faq-page {
+		width: 100%;
+		background-image: url('../img/aftident_faq-page_background_dots.png');
+		background-position: center;
 	}
 }
 @media (min-width: 1200px) {

@@ -892,6 +892,9 @@ main .contact-info__information__info a {
   line-height: 150%; /* 21px */
 }
 
+main .faq-page {
+  background-image: none;
+}
 main .faq__table--faq-page {
   border-radius: 1rem;
   border: 1px solid #e5e9ed;
@@ -1144,6 +1147,11 @@ main .faq__table--faq-page .faq__table__element {
     padding: 2rem 2rem 2rem 2rem;
     flex-direction: row;
     justify-content: space-between;
+  }
+  main .faq-page {
+    width: 100%;
+    background-image: url("../img/aftident_faq-page_background_dots.png");
+    background-position: center;
   }
 }
 @media (min-width: 1420px) {
