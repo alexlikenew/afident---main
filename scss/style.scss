@@ -83,7 +83,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+// ================== HOME PAGE ==========================
 .wrapper {
 	width: 100%;
 	max-width: 1420px;
@@ -382,9 +382,15 @@ main {
 			align-self: stretch;
 			padding: 40px 20px;
 		}
-		img {
-			width: 100%;
-			height: 150px;
+		&__image {
+			&__desktop {
+				display: none;
+			}
+			&__mobile {
+				display: flex;
+				width: 100%;
+				height: 150px;
+			}
 		}
 		&__text {
 			display: flex;
@@ -569,6 +575,7 @@ main {
 					flex-direction: row;
 					justify-content: space-between;
 					align-items: center;
+					width: 100%;
 				}
 				&--first {
 					border-top: 1px solid $dark-turkus;
@@ -925,6 +932,59 @@ main {
 		}
 	}
 }
+// ================== HOME PAGE ==========================
+// ================== FAQ PAGE ==========================
+main {
+	.faq {
+		&__table {
+			&--faq-page {
+				border-radius: 1rem;
+				border: 1px solid $grey;
+			}
+		}
+		&__information {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			&__paragraph {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				gap: 1rem;
+				&__title {
+					color: $pure-black;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+				}
+				&__text {
+					color: $pure-black;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 150%; /* 24px */
+				}
+			}
+		}
+	}
+}
+main .faq__table--faq-page .faq__table__element {
+	border: none;
+	display: flex;
+	padding: 1.5rem 2rem;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	align-self: stretch;
+	border-bottom: 1px solid $grey;
+}
+
+// ================== FAQ PAGE ==========================
+// SHOW & HIDE CLASSES || ANIMATION CLASSES
 .show {
 	display: flex !important;
 }
@@ -1002,7 +1062,7 @@ main {
 	}
 	// SECTION KNOW-MORE
 	main .know-more .wrapper {
-		padding: 8rem 0 8rem 0;
+		padding: 8rem 2rem 8rem 2rem;
 		max-width: 1320px;
 		flex-direction: row;
 		justify-content: space-between;
@@ -1061,6 +1121,12 @@ main {
 	}
 	main .faq__table__element {
 		width: 100%;
+	}
+	main .faq__title-info h2 {
+		font-size: 4.8rem;
+	}
+	main .faq__table--faq-page .faq__table__element {
+		padding: 2rem 4rem;
 	}
 	// SECTION CONTACT
 	main .contact {
@@ -1153,5 +1219,8 @@ main {
 	}
 	.footer .wrapper {
 		padding: 2rem 0 2rem 0;
+	}
+	main .know-more .wrapper {
+		padding: 8rem 0 8rem 0;
 	}
 }
