@@ -159,13 +159,16 @@ header {
 		}
 	}
 }
+// NAV
 .nav {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-
+	&__logo {
+		cursor: pointer;
+	}
 	&__desktop {
 		max-width: 1000px;
 		width: 100%;
@@ -173,6 +176,7 @@ header {
 		flex-direction: row;
 		padding: 2rem 0 2rem 0;
 		gap: 5rem;
+
 		&__menu {
 			display: flex;
 			// justify-content: space-between;
