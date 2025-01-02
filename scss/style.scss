@@ -54,6 +54,7 @@ body {
 	height: 100%;
 	font-family: 'Montserrat', serif;
 	font-size: 1.6rem;
+	background-color: #f9fbfd;
 }
 a {
 	text-decoration: none;
@@ -987,6 +988,158 @@ main .faq__table--faq-page .faq__table__element {
 }
 
 // ================== FAQ PAGE ==========================
+// ================== ABOUT ==========================
+main {
+	.top-info {
+		.wrapper {
+			display: flex;
+			padding: 12rem 2rem 6rem 2rem;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-self: stretch;
+		}
+		&__block {
+			display: flex;
+			flex-direction: column;
+			justify-items: center;
+			justify-content: center;
+			gap: 4rem;
+			&__button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.buy-now-btn {
+				align-items: center;
+				justify-content: center;
+				max-width: 60%;
+				text-align: center;
+			}
+			&__information {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				gap: 2rem;
+				&__title {
+					text-align: center;
+					color: $dark-turkus;
+					font-size: 2.4rem;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+				}
+				&__text {
+					color: $pure-black;
+					text-align: center;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 150%; /* 24px */
+				}
+			}
+		}
+	}
+	.how-it-works {
+		display: flex;
+		padding: 2rem;
+		flex-direction: column;
+		align-items: center;
+
+		align-self: stretch;
+		.wrapper {
+			flex-direction: column;
+		}
+		&__card {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 2rem;
+			gap: 1rem;
+			border-radius: 1.5rem;
+			border: 1px solid $grey;
+			background: $pure-white;
+			&__title {
+				color: $dark-turkus;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				text-align: center;
+			}
+			&__text {
+				color: $dark-turkus;
+				text-align: center;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 150%; /* 18px */
+			}
+		}
+	}
+	.pain-free {
+		.wrapper {
+			flex-direction: column;
+		}
+		&__container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 4rem 2rem 8rem 2rem;
+			gap: 2rem;
+			align-self: stretch;
+			&__image {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+
+				&__woman {
+					z-index: -100;
+				}
+				&__gel {
+					display: block;
+					position: absolute;
+					bottom: -75px;
+					right: -32px;
+					z-index: -99;
+				}
+			}
+			&__information {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 2rem;
+				padding-top: 7rem;
+				&__title {
+					color: $dark-turkus;
+					font-size: 3.6rem;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 110%; /* 39.6px */
+				}
+				&__text {
+					color: $pure-black;
+					font-size: 1.6rem;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 150%; /* 24px */
+				}
+				&__trademark {
+					background-color: $pure-white;
+					font-size: 16px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+// ================== ABOUT ==========================
+
 // SHOW & HIDE CLASSES || ANIMATION CLASSES
 .show {
 	display: flex !important;
