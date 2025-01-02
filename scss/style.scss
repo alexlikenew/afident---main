@@ -1000,15 +1000,20 @@ main {
 			align-self: stretch;
 		}
 		&__block {
+			width: 100%;
 			display: flex;
 			flex-direction: column;
-			justify-items: center;
+			align-items: center;
 			justify-content: center;
 			gap: 4rem;
+			&__image--dekstop {
+				display: none;
+			}
 			&__button {
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				width: 100%;
 			}
 			.buy-now-btn {
 				align-items: center;
@@ -1050,6 +1055,7 @@ main {
 		align-self: stretch;
 		.wrapper {
 			flex-direction: column;
+			gap: 1rem;
 		}
 		&__card {
 			display: flex;
@@ -1096,16 +1102,32 @@ main {
 				justify-content: center;
 				align-items: center;
 				position: relative;
+				max-width: 100%;
 
 				&__woman {
 					z-index: -100;
+					max-width: 100%;
+					&--desktop {
+						display: none;
+					}
+					&--mobile {
+						display: flex;
+					}
 				}
 				&__gel {
 					display: block;
 					position: absolute;
 					bottom: -75px;
-					right: -32px;
+
 					z-index: -99;
+					&--mobile {
+						display: flex;
+						right: -32px;
+					}
+					&--desktop {
+						display: none;
+						right: -85px;
+					}
 				}
 			}
 			&__information {
@@ -1192,6 +1214,7 @@ main {
 		justify-content: center;
 		align-items: center;
 		max-height: 40rem;
+		width: 100%;
 		background-image: url('../img/aftident_o-produkcie_jeden_cel_desktop.jpg');
 		background-position: center;
 		background-repeat: no-repeat;
@@ -1271,6 +1294,12 @@ main {
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				&--mobile {
+					display: block;
+				}
+				&--desktop {
+					display: none;
+				}
 			}
 		}
 	}
@@ -1437,7 +1466,7 @@ main {
 		max-width: 1420px;
 		flex-direction: row;
 		justify-content: flex-start;
-		padding: 10rem 0 10rem 0;
+		padding: 10rem 2rem 10rem 2rem;
 		z-index: 10;
 	}
 	main .contact__form {
@@ -1507,6 +1536,74 @@ main {
 		background-image: url('../img/aftident_faq-page_background_dots.png');
 		background-position: center;
 	}
+	// ========================FAQ PAGE=========================
+	// ========================ABOUT PAGE=========================
+	main .top-info .wrapper {
+		max-width: 820px;
+	}
+	.top-info__block__image--mobile {
+		display: none;
+	}
+	main .top-info__block__image--dekstop {
+		display: block;
+	}
+	main .how-it-works .wrapper {
+		flex-direction: row;
+		gap: 4rem;
+	}
+	main .how-it-works__card {
+		min-height: 35rem;
+		justify-content: flex-start;
+	}
+	main .pain-free .wrapper {
+		max-width: 1320px;
+		padding: 0 2rem;
+	}
+	main .pain-free__container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	main .pain-free__container__image {
+		max-width: 45.45%;
+	}
+	main .pain-free__container__information {
+		max-width: 45.45%;
+	}
+	main .pain-free__container__image__woman--desktop {
+		display: flex;
+	}
+	main .pain-free__container__image__woman--mobile {
+		display: none;
+	}
+	main .pain-free__container__image__gel--mobile {
+		display: none;
+	}
+	main .pain-free__container__image__gel--desktop {
+		display: block;
+	}
+	// PRIZE
+	main .prize .wrapper {
+		max-width: 1320px;
+		padding: 0 2rem;
+	}
+	// EFFECT
+	main .effect__container {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+	main .effect__container__information {
+		max-width: 49.6%;
+	}
+	main .effect__container__image--mobile {
+		display: none;
+	}
+	main .effect__container__image {
+		max-width: 49.6%;
+	}
+	main .effect__container__image--desktop {
+		display: block;
+	}
+	// ========================ABOUT PAGE=========================
 }
 @media (min-width: 1200px) {
 }
