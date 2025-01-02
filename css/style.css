@@ -1081,6 +1081,137 @@ main .pain-free__container__information__trademark {
   font-size: 16px;
   text-align: center;
 }
+main .prize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .prize .wrapper {
+  flex-direction: column;
+  padding: 4rem 2rem 4rem 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  align-self: stretch;
+}
+main .prize__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+main .prize__container__information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .prize__container__information__title {
+  color: #18212a;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 39.6px */
+}
+main .prize__container__information__text {
+  color: #000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+main .prize__container__information__text span {
+  background-color: #f9fbfd;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+main .only-purpose {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 40rem;
+  background-image: url("../img/aftident_o-produkcie_jeden_cel_desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .only-purpose .wrapper {
+  display: flex;
+  padding: 8rem 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  align-self: stretch;
+}
+main .only-purpose__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main .only-purpose__container__text {
+  color: #fff;
+  text-align: center;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .only-purpose__container__divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+}
+main .only-purpose__container__title {
+  color: #fff;
+  text-align: center;
+  font-size: 3.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .effect .wrapper {
+  flex-direction: column;
+}
+main .effect__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+}
+main .effect__container__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0px;
+}
+main .effect__container__information__title {
+  color: #18212a;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 39.6px */
+}
+main .effect__container__information__text {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+main .effect__container__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .show {
   display: flex !important;
