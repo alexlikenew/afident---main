@@ -54,7 +54,7 @@ body {
 	height: 100%;
 	font-family: 'Montserrat', serif;
 	font-size: 1.6rem;
-	background-color: #f9fbfd;
+	// background-color: #f9fbfd;
 }
 a {
 	text-decoration: none;
@@ -100,6 +100,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1000;
 }
 .header {
 	position: relative;
@@ -245,7 +246,7 @@ header {
 		}
 	}
 }
-
+// MAIN INDEX PAGE
 main {
 	padding-top: 7.2rem;
 	display: flex;
@@ -1309,8 +1310,112 @@ main {
 	}
 }
 // ================== ABOUT PAGE ==========================
+// ================== CONTACT PAGE ==========================
+main {
+	.contact--page {
+		.wrapper {
+			padding: 4rem 2rem;
+		}
+	}
+	.contact {
+		&__ask-more {
+			&__contacts {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				gap: 2rem;
+				width: 100%;
+				padding-top: 2rem;
+				&__element {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-start;
 
-// SHOW & HIDE CLASSES || ANIMATION CLASSES
+					gap: 1rem;
+					&__title {
+						color: $dark-turkus;
+						font-size: 18px;
+						font-style: normal;
+						font-weight: 600;
+						line-height: normal;
+					}
+					&__text {
+						color: $pure-black;
+						font-size: 12px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 150%; /* 18px */
+					}
+				}
+			}
+		}
+	}
+}
+// ================== CONTACT PAGE ==========================
+// ================== ERROR PAGE ==========================
+main {
+	.error {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 8rem 2rem 8rem 2rem;
+
+		.wrapper {
+			max-width: 820px;
+		}
+		&__container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+			&__title {
+				color: $pure-black;
+				font-size: 1.8rem;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+			}
+			&__number {
+				color: $main-red;
+				text-align: center;
+				font-size: 64px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+			&__text {
+				color: $pure-black;
+				text-align: center;
+				font-size: 1.6rem;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 150%; /* 24px */
+			}
+			&__link {
+				display: flex;
+				padding: 0.7rem 2rem;
+				align-items: flex-start;
+				gap: 1rem;
+				border-radius: 3.3rem;
+				background: $main-red;
+				color: $pure-white;
+				text-align: center;
+				font-size: 1.6rem;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 150%; /* 24px */
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+// ================== ERROR PAGE ==========================
+
+// ==============SHOW & HIDE CLASSES || ANIMATION CLASSES ============
 .show {
 	display: flex !important;
 }
@@ -1327,8 +1432,8 @@ main {
 .spin45 {
 	transform: rotate(45deg);
 }
-
-// MEDIA QUERIES
+// ==============SHOW & HIDE CLASSES || ANIMATION CLASSES ============
+// ======================== MEDIA QUERIES ============================
 @media (min-width: 576px) {
 }
 @media (min-width: 768px) {
@@ -1403,6 +1508,13 @@ main {
 	main .know-more__text h2 {
 		font-size: 3.6rem;
 	}
+	main .know-more__image__desktop {
+		display: block;
+	}
+	main .know-more__image__mobile {
+		display: none;
+	}
+
 	// SECTION INFORMATION
 	main .information .wrapper {
 		max-width: 1120px;
@@ -1608,6 +1720,59 @@ main {
 		display: block;
 	}
 	// ========================ABOUT PAGE=========================
+	// ========================CONTACT PAGE=========================
+	main .contact--page .wrapper {
+		max-width: 1420px;
+		flex-direction: row-reverse;
+		justify-content: center;
+		padding: 10rem 2rem 10rem 2rem;
+		z-index: 10;
+	}
+	main .contact--page .contact__ask-more {
+		width: 52.8%;
+		padding-bottom: 8rem;
+		border-bottom: 1px solid $grey;
+	}
+	main {
+		.contact {
+			&__ask-more {
+				&__contacts {
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: flex-start;
+					flex-wrap: wrap;
+					gap: 2rem;
+					padding-top: 4rem;
+					&__element {
+						width: 40%;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: flex-start;
+						gap: 1rem;
+						&__title {
+							color: $dark-turkus;
+							font-size: 18px;
+							font-style: normal;
+							font-weight: 600;
+							line-height: normal;
+						}
+						&__text {
+							color: $pure-black;
+							font-size: 12px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 150%; /* 18px */
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// ========================CONTACT PAGE=========================
 }
 @media (min-width: 1200px) {
 }
@@ -1625,3 +1790,4 @@ main {
 		padding: 8rem 0 8rem 0;
 	}
 }
+// ======================== MEDIA QUERIES ============================

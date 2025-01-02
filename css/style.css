@@ -38,7 +38,6 @@ body {
   height: 100%;
   font-family: "Montserrat", serif;
   font-size: 1.6rem;
-  background-color: #f9fbfd;
 }
 
 a {
@@ -85,6 +84,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .header {
@@ -1244,6 +1244,96 @@ main .effect__container__image--desktop {
   display: none;
 }
 
+main .contact--page .wrapper {
+  padding: 4rem 2rem;
+}
+main .contact__ask-more__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  padding-top: 2rem;
+}
+main .contact__ask-more__contacts__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+main .contact__ask-more__contacts__element__title {
+  color: #18212a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+main .contact__ask-more__contacts__element__text {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+
+main .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8rem 2rem 8rem 2rem;
+}
+main .error .wrapper {
+  max-width: 820px;
+}
+main .error__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+main .error__container__title {
+  color: #000;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+main .error__container__number {
+  color: #fb2f39;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .error__container__text {
+  color: #000;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+main .error__container__link {
+  display: flex;
+  padding: 0.7rem 2rem;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 3.3rem;
+  background: #fb2f39;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+}
+
 .show {
   display: flex !important;
 }
@@ -1329,6 +1419,12 @@ main .effect__container__image--desktop {
   }
   main .know-more__text h2 {
     font-size: 3.6rem;
+  }
+  main .know-more__image__desktop {
+    display: block;
+  }
+  main .know-more__image__mobile {
+    display: none;
   }
   main .information .wrapper {
     max-width: 1120px;
@@ -1520,6 +1616,50 @@ main .effect__container__image--desktop {
   }
   main .effect__container__image--desktop {
     display: block;
+  }
+  main .contact--page .wrapper {
+    max-width: 1420px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 10rem 2rem 10rem 2rem;
+    z-index: 10;
+  }
+  main .contact--page .contact__ask-more {
+    width: 52.8%;
+    padding-bottom: 8rem;
+    border-bottom: 1px solid #e5e9ed;
+  }
+  main .contact__ask-more__contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 4rem;
+  }
+  main .contact__ask-more__contacts__element {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  main .contact__ask-more__contacts__element__title {
+    color: #18212a;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  main .contact__ask-more__contacts__element__text {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
   }
 }
 @media (min-width: 1420px) {
